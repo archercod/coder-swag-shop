@@ -49,24 +49,21 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHIRTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ulb-m0-60U">
-                                                    <rect key="frame" x="76" y="69" width="222" height="27.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="27.5" id="d61-4g-L4V"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="76" y="69" width="222" height="28"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="Ulb-m0-60U" firstAttribute="leading" secondItem="9tb-VU-6jL" secondAttribute="leadingMargin" constant="68" id="11T-Qc-PRC"/>
                                                 <constraint firstItem="QmN-VP-ZBH" firstAttribute="top" secondItem="9tb-VU-6jL" secondAttribute="top" constant="3" id="1ep-cn-ZPy"/>
-                                                <constraint firstItem="Ulb-m0-60U" firstAttribute="leading" secondItem="9tb-VU-6jL" secondAttribute="leadingMargin" constant="68" id="3sT-f4-sb0"/>
                                                 <constraint firstAttribute="bottom" secondItem="QmN-VP-ZBH" secondAttribute="bottom" constant="3" id="9Ad-Ce-57v"/>
-                                                <constraint firstItem="Ulb-m0-60U" firstAttribute="centerX" secondItem="QmN-VP-ZBH" secondAttribute="centerX" id="Qc3-bt-Zep"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Ulb-m0-60U" secondAttribute="bottom" constant="54.5" id="C4w-pc-bFi"/>
                                                 <constraint firstAttribute="trailing" secondItem="QmN-VP-ZBH" secondAttribute="trailing" id="bL3-rp-rS7"/>
-                                                <constraint firstItem="Ulb-m0-60U" firstAttribute="centerY" secondItem="9tb-VU-6jL" secondAttribute="centerY" constant="3" id="jD9-z4-cAG"/>
+                                                <constraint firstItem="Ulb-m0-60U" firstAttribute="centerX" secondItem="QmN-VP-ZBH" secondAttribute="centerX" id="hkR-1R-NBe"/>
+                                                <constraint firstItem="Ulb-m0-60U" firstAttribute="centerY" secondItem="QmN-VP-ZBH" secondAttribute="centerY" id="lpj-Lr-Vj1"/>
                                                 <constraint firstItem="QmN-VP-ZBH" firstAttribute="leading" secondItem="9tb-VU-6jL" secondAttribute="leading" id="lzv-vK-v4L"/>
-                                                <constraint firstItem="Ulb-m0-60U" firstAttribute="top" secondItem="9tb-VU-6jL" secondAttribute="topMargin" constant="61" id="y93-08-ZSv"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -186,6 +183,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="15i-gk-iS2"/>
                     </view>
+                    <connections>
+                        <outlet property="productsCollection" destination="gTy-G4-XTo" id="lTr-83-gLo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jn1-G8-ucd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

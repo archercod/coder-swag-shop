@@ -17,12 +17,14 @@ class ProductsVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        productsCollection.delegate = self
         productsCollection.dataSource = self
+        productsCollection.delegate = self
+        
     }
     
     func initProduct(category: Category) {
         products = DataService.instance.getProducts(forCategoryTitle: category.title)
+        navigationItem.title = category.title
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
